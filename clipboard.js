@@ -23,8 +23,7 @@ import brownApe from './models/brown-ape-122.gltf';
 import zombie from './models/zombie-1046.gltf';
 
 
-// background: linear-gradient(
-// 	90deg,rgba(152,69,254,.6),rgba(0,209,139,.6));
+// background: linear-gradient(90deg,rgba(152,69,254,.6),rgba(0,209,139,.6));
 
 const App = () =>{
 
