@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0dc6729.chunk.css",
+    "main.js": "/static/js/main.fba62ba1.chunk.js",
+    "main.js.map": "/static/js/main.fba62ba1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0287a881.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0287a881.js.map",
+    "static/js/2.6be28a4a.chunk.js": "/static/js/2.6be28a4a.chunk.js",
+    "static/js/2.6be28a4a.chunk.js.map": "/static/js/2.6be28a4a.chunk.js.map",
+    "static/js/3.09832e55.chunk.js": "/static/js/3.09832e55.chunk.js",
+    "static/js/3.09832e55.chunk.js.map": "/static/js/3.09832e55.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e0dc6729.chunk.css.map": "/static/css/main.e0dc6729.chunk.css.map",
+    "static/js/2.6be28a4a.chunk.js.LICENSE.txt": "/static/js/2.6be28a4a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/PixelOperatorSC.46783159.woff2",
+    "static/media/ar_vox.3d3d6f15.png": "/static/media/ar_vox.3d3d6f15.png",
+    "static/media/black-ape-1023.0387754b.glb": "/static/media/black-ape-1023.0387754b.glb",
+    "static/media/brown-ape-122.2cb74078.glb": "/static/media/brown-ape-122.2cb74078.glb",
+    "static/media/female-jbg-1010.eb2b9b0e.glb": "/static/media/female-jbg-1010.eb2b9b0e.glb",
+    "static/media/male-bgg-119.36093210.glb": "/static/media/male-bgg-119.36093210.glb",
+    "static/media/pig-cop-111.7650b6c9.glb": "/static/media/pig-cop-111.7650b6c9.glb",
+    "static/media/world_cube.6346823f.png": "/static/media/world_cube.6346823f.png",
+    "static/media/zombie-1046.78bdcabc.glb": "/static/media/zombie-1046.78bdcabc.glb"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0287a881.js",
+    "static/js/2.6be28a4a.chunk.js",
+    "static/css/main.e0dc6729.chunk.css",
+    "static/js/main.fba62ba1.chunk.js"
+  ]
+}
