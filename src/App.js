@@ -7,7 +7,7 @@ import discordWhite from "./imgs/pixelated_discord_logo_white.png"
 import discordPurple from "./imgs/pixelated_discord_logo_purple.png"
 import pixelHeart from "./imgs/pixelated_heart.png"
 import pixelCheck from "./imgs/pixelated_checkmark.png"
-import couchVox from "./imgs/couch_vox.png"
+import couchVox from "./imgs/couch_vox_small.png"
 import qrCode from "./imgs/QR.png"
 import arVox from './imgs/ar_vox.png';
 import worldCube from './imgs/world_cube.png';
@@ -28,7 +28,7 @@ const App = () => {
 			{ !isMobile ? <Splash /> : <MobileSplash />}
 			{  isMobile && <MobileAR />}
 			{ !isMobile ? <Marketplaces /> : <MobileMarketplaces />}
-			{ !isMobile && <QR /> }
+			{/* { !isMobile && <QR /> } */}
 			{ !isMobile ? <Community /> : <MobileCommunity /> }
 			{ !isMobile ? <Roadmap /> : <MobileRoadmap />}
 			{ !isMobile && <Footer /> }
@@ -128,7 +128,7 @@ const Splash = ( ) => {
 	const blockStyle = { height: "30px", width: "30px", cursor: "pointer" }
 	const selectedStyle = { height: "35px", width: "35px", border: "2px solid black" }
 
-	const headerStyle = { width: "500px", fontSize: "2em" }
+	const headerStyle = { width: "500px", fontSize: "2em", margin: ".5em 0em" }
 	const textStyle = { width: "500px", fontFamily: "PixelOperatorMono", fontSize: "1.2em" }
 
 	return (
@@ -137,6 +137,7 @@ const Splash = ( ) => {
 				<h1 style = { headerStyle } >Welcome to the Club!</h1>
 				<p style = { textStyle } >Vox Punks Club is a collection of 5001 NFTs minted on the Solana Blockchain! We’ve used voxel modeling to reimagine the original Crypto Punks and make them interactable characters in the metaverse. Complete with angels, devils, cops, & cowgirls, the Vox Punk Club has something for everyone.</p>
 				<Clickable text = "EXPLORE THE COLLECTION" link = "https://voxpunksclub.com/rarity" baseStyle = {{ width: "230px" }} />
+				<Clickable text = "SEE YOUR VOX IN 3D" link = "https://voxpunksclub.com/portal" baseStyle = {{ width: "230px" }} />
 			</div>
 			<div style = { arContainerStyle }>
 				<div style = { arStyle } >
@@ -272,7 +273,7 @@ const Marketplaces = ( ) => {
 		justifyContent: 'space-around',
 		height: "500px", width: "500px",
 	}
-	const headerStyle = { width: "500px", fontSize: "2em" }
+	const headerStyle = { width: "500px", fontSize: "2em", margin: ".5em 0em" }
 	const blockStyle = { height: "30px", width: "30px", cursor: "pointer" }
 	const selectedStyle = { height: "35px", width: "35px", border: "2px solid black" }
 	const arStyle = { height: "500px", width: "500px"}
@@ -366,29 +367,31 @@ const Clickable = ({ text, link, baseStyle = {} }) => {
 	)
 }
 
-const QR = ( ) => {
-	const areaStyle = {
-		backgroundColor: "#F2F2F2", fontFamily: "PixelOperatorMonoHB",
-		height: "700px", display : "flex", flexDirection: "row",
-		justifyContent: 'center', alignItems: 'center', position: "relative"
-	}
-	const divStyle = { 
-		display: "block", position: "absolute", 
-		width: "260px", backgroundColor: "white",
-		padding: "20px 20px",
-	}
+// QR code to start 3d scene inmobile  does not work yet. Pleasefix ?
 
-	const imgStyle = { display: "block", width: "100%"}
-	const qrStyle = { display: "block", position: "absolute", width: "300px", top: "100px"}
-	return (
-		<div style = { areaStyle } >
-			<img style = { qrStyle } src = { qrCode } alt = "qr code" />
-			<div style = {{ ...divStyle, top: "425px" }}>Use the above QR code to check out Vox Punks in VR. Already own a Vox? Click the below button to download the 3D files.</div>
-			<Clickable baseStyle = {{ position: "absolute", top: "600px", width: "280px" }} text = "SEE YOUR VOX IN 3D" link = "https://voxpunksclub.com/portal" />
-			<img style = { imgStyle } src = { couchVox } alt = "a couch with a angel andd evil vox punk" />
-		</div>
-	)
-}
+// const QR = ( ) => {
+// 	const areaStyle = {
+// 		backgroundColor: "#F2F2F2", fontFamily: "PixelOperatorMonoHB",
+// 		display : "flex", flexDirection: "row",
+// 		justifyContent: 'center', alignItems: 'center', position: "relative"
+// 	}
+// 	const divStyle = { 
+// 		display: "block", position: "absolute", 
+// 		width: "260px", backgroundColor: "white",
+// 		padding: "20px 20px",
+// 	}
+
+// 	const imgStyle = { display: "block", width: "100%"}
+// 	const qrStyle = { display: "block", position: "absolute", width: "300px", top: "50px"}
+// 	return (
+// 		<div style = { areaStyle } >
+// 			<img style = { qrStyle } src = { qrCode } alt = "qr code" />
+// 			<div style = {{ ...divStyle, top: "375px" }}>Use the above QR code to check out Vox Punks in VR. Already own a Vox? Click the below button to download the 3D files.</div>
+// 			<Clickable baseStyle = {{ position: "absolute", top: "550px", width: "280px" }} text = "SEE YOUR VOX IN 3D" link = "https://voxpunksclub.com/portal" />
+// 			<img style = { imgStyle } src = { couchVox } alt = "a couch with a angel andd evil vox punk" />
+// 		</div>
+// 	)
+// }
 
 const Community = ( ) => {
 	
