@@ -7,8 +7,8 @@ import discordWhite from "./imgs/pixelated_discord_logo_white.png"
 import discordPurple from "./imgs/pixelated_discord_logo_purple.png"
 import pixelHeart from "./imgs/pixelated_heart.png"
 import pixelCheck from "./imgs/pixelated_checkmark.png"
-import couchVox from "./imgs/couch_vox_small.png"
-import qrCode from "./imgs/QR.png"
+// import couchVox from "./imgs/couch_vox_small.png"
+// import qrCode from "./imgs/QR.png"
 import arVox from './imgs/ar_vox.png';
 import worldCube from './imgs/world_cube.png';
 import pigCop from './models/pig-cop-111.glb';
@@ -227,7 +227,7 @@ const MobileAR = ( ) => {
 					/>
 				</div>
 			</div>
-			<Clickable baseStyle = {{ width: "280px", margin: "1em 0em .5em 0em" }} text = "VIEW THIS VOX IN AR" link = "https://voxpunksclub.com/portal" />
+			{/* <Clickable baseStyle = {{ width: "280px", margin: "1em 0em .5em 0em" }} text = "VIEW THIS VOX IN AR" link = "https://voxpunksclub.com/portal" /> */}
 			<Clickable baseStyle = {{ width: "280px", margin: ".5em 0em 1em 0em" }} text = "GET YOUR 3D FILES" link = "https://voxpunksclub.com/portal" />
 		</div>
 	)
